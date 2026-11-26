@@ -128,3 +128,332 @@
     .featured-art {
       margin: 0 auto 28px;
     }
+
+    .featured-link {
+      display: block;
+      border-radius: 4px;
+      overflow: hidden;
+      background: #f8f8f8;
+    }
+
+    .featured-link img {
+      width: 100%;
+      max-height: 620px;
+      object-fit: cover;
+      object-position: center;
+      transition: transform 0.35s ease;
+    }
+
+    .featured-link:hover img {
+      transform: scale(1.015);
+    }
+
+    .featured-caption {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: baseline;
+      padding: 12px 2px 0;
+      font-family: "Gaegu", "Comic Sans MS", cursive;
+      font-size: 1.25rem;
+    }
+
+    .featured-caption span:last-child {
+      color: var(--soft-text);
+      font-size: 1.05rem;
+    }
+
+    /* INTRO LINE */
+
+    .intro-line {
+      max-width: 760px;
+      margin: 38px auto 46px;
+      text-align: center;
+    }
+
+    .intro-line p {
+      margin: 0;
+      font-family: "Gaegu", "Comic Sans MS", cursive;
+      font-size: clamp(1.55rem, 4vw, 2.35rem);
+      line-height: 1.15;
+    }
+
+    .intro-line .highlight {
+      background: linear-gradient(transparent 58%, #fff0a8 58%);
+      padding: 0 4px;
+    }
+
+    /* PORTFOLIO GRID */
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .portfolio-card {
+      position: relative;
+      display: block;
+      overflow: hidden;
+      background: #f7f7f7;
+      border-radius: 4px;
+    }
+
+    .portfolio-card img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      transition: transform 0.35s ease, filter 0.35s ease;
+    }
+
+    .portfolio-card:hover img {
+      transform: scale(1.03);
+      filter: brightness(0.94);
+    }
+
+    .portfolio-card-title {
+      position: absolute;
+      left: 12px;
+      bottom: 12px;
+      background: rgba(255, 255, 255, 0.92);
+      padding: 7px 11px 6px;
+      border-radius: 999px;
+      font-family: "Gaegu", "Comic Sans MS", cursive;
+      font-size: 1.15rem;
+      line-height: 1;
+      opacity: 0;
+      transform: translateY(6px);
+      transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    .portfolio-card:hover .portfolio-card-title {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* SMALL CATEGORY LINKS */
+
+    .category-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin: 44px 0 0;
+    }
+
+    .category-links a {
+      border: 2px solid var(--text);
+      border-radius: 999px;
+      padding: 9px 17px 7px;
+      font-family: "Gaegu", "Comic Sans MS", cursive;
+      font-size: 1.2rem;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .category-links a:nth-child(1):hover {
+      background: var(--accent-yellow);
+    }
+
+    .category-links a:nth-child(2):hover {
+      background: var(--accent-blue);
+    }
+
+    .category-links a:nth-child(3):hover {
+      background: var(--accent);
+    }
+
+    .category-links a:hover {
+      transform: translateY(-2px);
+    }
+
+    /* FOOTER */
+
+    .site-footer {
+      border-top: 1px solid var(--line);
+      text-align: center;
+      padding: 28px 20px;
+      color: var(--soft-text);
+      font-size: 0.95rem;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 850px) {
+      .top-nav {
+        gap: 18px;
+        font-size: 1.2rem;
+      }
+
+      main {
+        padding: 22px 18px 60px;
+      }
+
+      .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+      }
+
+      .featured-caption {
+        display: block;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .site-header {
+        padding: 22px 16px 16px;
+      }
+
+      .top-nav {
+        gap: 12px 16px;
+        font-size: 1.1rem;
+        margin-bottom: 18px;
+      }
+
+      .site-title {
+        font-size: 3rem;
+      }
+
+      .site-subtitle {
+        font-size: 0.8rem;
+      }
+
+      .portfolio-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .featured-link img {
+        max-height: 420px;
+      }
+
+      .portfolio-card-title {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="site-header">
+
+    <!-- MAIN NAVIGATION -->
+    <nav class="top-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="childrens-books.html">Children's Books</a>
+      <a href="concepts.html">Concepts</a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+    </nav>
+
+    <!-- SITE TITLE -->
+    <h1 class="site-title">Kylie Guentherman</h1>
+    <p class="site-subtitle">Children’s Book Illustration</p>
+
+  </header>
+
+  <main>
+
+    <!--
+      FEATURED IMAGE
+      Replace the image link below with one of your strongest horizontal illustrations.
+
+      Example if your file is in an images folder:
+      src="images/eli-and-the-candlemaker.jpg"
+    -->
+    <section class="featured-art" aria-label="Featured illustration">
+      <a class="featured-link" href="childrens-books.html">
+        <img
+          src="https://placehold.co/1600x850/f3efe8/333333?text=Featured+Illustration"
+          alt="Featured children’s book illustration by Kylie Guentherman"
+        >
+      </a>
+
+      <div class="featured-caption">
+        <span>Featured Work</span>
+        <span>Eli and the Candlemaker</span>
+      </div>
+    </section>
+
+    <!-- SHORT INTRO -->
+    <section class="intro-line">
+      <p>
+        Playful picture book art, character-filled worlds,
+        and <span class="highlight">illustrations made for story time.</span>
+      </p>
+    </section>
+
+    <!-- PORTFOLIO GRID -->
+    <section class="portfolio-grid" aria-label="Portfolio preview">
+
+      <!--
+        Replace each placeholder image with your own artwork.
+        Example:
+        src="images/guentherman-eli-candlemaker.jpg"
+      -->
+
+      <a class="portfolio-card" href="childrens-books.html">
+        <img
+          src="https://placehold.co/900x900/f8d6c8/333333?text=Children's+Book"
+          alt="Children’s book illustration by Kylie Guentherman"
+        >
+        <span class="portfolio-card-title">Children’s Books</span>
+      </a>
+
+      <a class="portfolio-card" href="concepts.html">
+        <img
+          src="https://placehold.co/900x900/d8edf7/333333?text=Concept+Art"
+          alt="Concept artwork by Kylie Guentherman"
+        >
+        <span class="portfolio-card-title">Concepts</span>
+      </a>
+
+      <a class="portfolio-card" href="childrens-books.html">
+        <img
+          src="https://placehold.co/900x900/f7e5a6/333333?text=Story+Scene"
+          alt="Story scene illustration by Kylie Guentherman"
+        >
+        <span class="portfolio-card-title">Story Scenes</span>
+      </a>
+
+      <a class="portfolio-card" href="concepts.html">
+        <img
+          src="https://placehold.co/900x900/cfe8d5/333333?text=Characters"
+          alt="Character design illustration by Kylie Guentherman"
+        >
+        <span class="portfolio-card-title">Characters</span>
+      </a>
+
+      <a class="portfolio-card" href="childrens-books.html">
+        <img
+          src="https://placehold.co/900x900/e8d9f2/333333?text=Book+Work"
+          alt="Book illustration by Kylie Guentherman"
+        >
+        <span class="portfolio-card-title">Book Work</span>
+      </a>
+
+      <a class="portfolio-card" href="concepts.html">
+        <img
+          src="https://placehold.co/900x900/f2dfcf/333333?text=Worldbuilding"
+          alt="Worldbuilding illustration by Kylie Guentherman"
+        >
+        <span class="portfolio-card-title">Worldbuilding</span>
+      </a>
+
+    </section>
+
+    <!-- QUICK CATEGORY BUTTONS -->
+    <div class="category-links" aria-label="Portfolio categories">
+      <a href="childrens-books.html">View Children’s Books</a>
+      <a href="concepts.html">View Concepts</a>
+      <a href="contact.html">Work With Me</a>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    © 2026 Kylie Guentherman. All rights reserved.
+  </footer>
+
+</body>
+</html>
