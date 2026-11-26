@@ -1,143 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kylie Guentherman Illustration</title>
-
-  <!--
-    PLAYFUL PORTFOLIO HOMEPAGE
-    Inspired by clean illustrator portfolio layouts:
-    - white background
-    - simple centered navigation
-    - playful typography
-    - artwork shown immediately
-  -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <header class="site-header">
+  <div class="page">
 
-    <!-- MAIN NAVIGATION -->
-    <nav class="top-nav" aria-label="Main navigation">
-      <a href="index.html">Home</a>
-      <a href="childrens-books.html">Children's Books</a>
-      <a href="concepts.html">Concepts</a>
-      <a href="contact.html">Contact</a>
-      <a href="about.html">About</a>
-    </nav>
+    <header>
+      <nav>
+        <a class="active" href="index.html">Home</a>
+        <a href="childrens-books.html">Children's Books</a>
+        <a href="concepts.html">Concepts</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+      </nav>
 
-    <!-- SITE TITLE -->
-    <h1 class="site-title">Kylie Guentherman</h1>
-    <p class="site-subtitle">Children’s Book Illustration</p>
+      <h1 class="site-name">Kylie Guentherman</h1>
+      <div class="subtitle">Children’s Book Illustration</div>
+    </header>
 
-  </header>
+    <main>
 
-  <main>
+      <section class="hero">
+        <a href="childrens-books.html">
+          <img src="https://placehold.co/1600x850/f5f1ec/333333?text=Featured+Illustration" alt="Featured illustration by Kylie Guentherman">
+        </a>
+        <div class="hero-caption">Eli and the Candlemaker</div>
+      </section>
 
-    <!--
-      FEATURED IMAGE
-      Replace the image link below with one of your strongest horizontal illustrations.
+      <section class="intro">
+        Playful illustrations for children’s books, character-filled worlds, and imaginative storytelling.
+      </section>
 
-      Example if your file is in an images folder:
-      src="images/eli-and-the-candlemaker.jpg"
-    -->
-    <section class="featured-art" aria-label="Featured illustration">
-      <a class="featured-link" href="childrens-books.html">
-        <img
-          src="https://placehold.co/1600x850/f3efe8/333333?text=Featured+Illustration"
-          alt="Featured children’s book illustration by Kylie Guentherman"
-        >
-      </a>
+      <section class="gallery">
 
-      <div class="featured-caption">
-        <span>Featured Work</span>
-        <span>Eli and the Candlemaker</span>
-      </div>
-    </section>
+        <a class="gallery-item" href="childrens-books.html">
+          <img src="https://placehold.co/900x900/f8d7c8/333333?text=Children's+Books" alt="Children's book illustration">
+          <p>Children’s Books</p>
+        </a>
 
-    <!-- SHORT INTRO -->
-    <section class="intro-line">
-      <p>
-        Playful picture book art, character-filled worlds,
-        and <span class="highlight">illustrations made for story time.</span>
-      </p>
-    </section>
+        <a class="gallery-item" href="concepts.html">
+          <img src="https://placehold.co/900x900/d8edf7/333333?text=Concepts" alt="Concept illustration">
+          <p>Concepts</p>
+        </a>
 
-    <!-- PORTFOLIO GRID -->
-    <section class="portfolio-grid" aria-label="Portfolio preview">
+        <a class="gallery-item" href="childrens-books.html">
+          <img src="https://placehold.co/900x900/f7e5a6/333333?text=Story+Scenes" alt="Story scene illustration">
+          <p>Story Scenes</p>
+        </a>
 
-      <!--
-        Replace each placeholder image with your own artwork.
-        Example:
-        src="images/guentherman-eli-candlemaker.jpg"
-      -->
+        <a class="gallery-item" href="concepts.html">
+          <img src="https://placehold.co/900x900/cfe8d5/333333?text=Characters" alt="Character illustration">
+          <p>Characters</p>
+        </a>
 
-      <a class="portfolio-card" href="childrens-books.html">
-        <img
-          src="https://placehold.co/900x900/f8d6c8/333333?text=Children's+Book"
-          alt="Children’s book illustration by Kylie Guentherman"
-        >
-        <span class="portfolio-card-title">Children’s Books</span>
-      </a>
+        <a class="gallery-item" href="childrens-books.html">
+          <img src="https://placehold.co/900x900/e8d9f2/333333?text=Book+Work" alt="Book illustration">
+          <p>Book Work</p>
+        </a>
 
-      <a class="portfolio-card" href="concepts.html">
-        <img
-          src="https://placehold.co/900x900/d8edf7/333333?text=Concept+Art"
-          alt="Concept artwork by Kylie Guentherman"
-        >
-        <span class="portfolio-card-title">Concepts</span>
-      </a>
+        <a class="gallery-item" href="concepts.html">
+          <img src="https://placehold.co/900x900/f2dfcf/333333?text=Worldbuilding" alt="Worldbuilding illustration">
+          <p>Worldbuilding</p>
+        </a>
 
-      <a class="portfolio-card" href="childrens-books.html">
-        <img
-          src="https://placehold.co/900x900/f7e5a6/333333?text=Story+Scene"
-          alt="Story scene illustration by Kylie Guentherman"
-        >
-        <span class="portfolio-card-title">Story Scenes</span>
-      </a>
+      </section>
 
-      <a class="portfolio-card" href="concepts.html">
-        <img
-          src="https://placehold.co/900x900/cfe8d5/333333?text=Characters"
-          alt="Character design illustration by Kylie Guentherman"
-        >
-        <span class="portfolio-card-title">Characters</span>
-      </a>
+    </main>
 
-      <a class="portfolio-card" href="childrens-books.html">
-        <img
-          src="https://placehold.co/900x900/e8d9f2/333333?text=Book+Work"
-          alt="Book illustration by Kylie Guentherman"
-        >
-        <span class="portfolio-card-title">Book Work</span>
-      </a>
+    <footer>
+      © 2026 Kylie Guentherman. All rights reserved.
+    </footer>
 
-      <a class="portfolio-card" href="concepts.html">
-        <img
-          src="https://placehold.co/900x900/f2dfcf/333333?text=Worldbuilding"
-          alt="Worldbuilding illustration by Kylie Guentherman"
-        >
-        <span class="portfolio-card-title">Worldbuilding</span>
-      </a>
-
-    </section>
-
-    <!-- QUICK CATEGORY BUTTONS -->
-    <div class="category-links" aria-label="Portfolio categories">
-      <a href="childrens-books.html">View Children’s Books</a>
-      <a href="concepts.html">View Concepts</a>
-      <a href="contact.html">Work With Me</a>
-    </div>
-
-  </main>
-
-  <footer class="site-footer">
-    © 2026 Kylie Guentherman. All rights reserved.
-  </footer>
+  </div>
 
 </body>
 </html>
