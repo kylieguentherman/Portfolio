@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Kylie Guentherman Art</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #faf8f4;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 30px 20px;
+      border-bottom: 1px solid #e5ded5;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+    }
+
+    header p {
+      margin: 8px 0 0;
+      color: #666;
+    }
+
+    nav {
+      margin-top: 18px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      color: #222;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 50px 20px;
+    }
+
+    section {
+      margin-bottom: 70px;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      font-weight: 500;
+      border-bottom: 1px solid #e5ded5;
+      padding-bottom: 10px;
+      margin-bottom: 24px;
+    }
+
+    .intro {
+      max-width: 650px;
+      margin: 0 auto 70px;
+      text-align: center;
+    }
+
+    .intro h2 {
+      border-bottom: none;
+      font-size: 2.2rem;
+      margin-bottom: 12px;
+    }
+
+    .intro p {
+      color: #666;
+      font-size: 1.05rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .artwork {
+      background: white;
+      border: 1px solid #e5ded5;
+    }
+
+    .artwork img {
+      width: 100%;
+      display: block;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      background: #eee;
+    }
+
+    .artwork div {
+      padding: 14px;
+    }
+
+    .artwork h3 {
+      margin: 0 0 4px;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    .artwork p {
+      margin: 0;
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    .about,
+    .contact {
+      max-width: 700px;
+    }
+
+    .about p,
+    .contact p {
+      color: #555;
+    }
+
+    .contact a {
+      color: #9b6b4e;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      border-top: 1px solid #e5ded5;
+      color: #777;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 750px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .intro h2 {
+        font-size: 1.8rem;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 6px 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Kylie Guentherman Art</h1>
+    <p>Children’s Book Illustration Portfolio</p>
+
+    <nav>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="intro">
+      <h2>Illustration for stories, characters, and imaginative worlds.</h2>
+      <p>
+        A simple portfolio of children’s book illustration, character design,
+        and storytelling artwork.
+      </p>
+    </section>
+
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+
+      <div class="gallery">
+
+        <article class="artwork">
+          <img src="https://placehold.co/800x1000/f1ece5/666?text=Artwork+1" alt="Artwork placeholder">
+          <div>
+            <h3>Artwork Title</h3>
+            <p>Picture book illustration</p>
+          </div>
+        </article>
+
+        <article class="artwork">
+          <img src="https://placehold.co/800x1000/f1ece5/666?text=Artwork+2" alt="Artwork placeholder">
+          <div>
+            <h3>Artwork Title</h3>
+            <p>Character design</p>
+          </div>
+        </article>
+
+        <article class="artwork">
+          <img src="https://placehold.co/800x1000/f1ece5/666?text=Artwork+3" alt="Artwork placeholder">
+          <div>
+            <h3>Artwork Title</h3>
+            <p>Storybook scene</p>
+          </div>
+        </article>
+
+        <article class="artwork">
+          <img src="https://placehold.co/800x1000/f1ece5/666?text=Artwork+4" alt="Artwork placeholder">
+          <div>
+            <h3>Artwork Title</h3>
+            <p>Book cover concept</p>
+          </div>
+        </article>
+
+        <article class="artwork">
+          <img src="https://placehold.co/800x1000/f1ece5/666?text=Artwork+5" alt="Artwork placeholder">
+          <div>
+            <h3>Artwork Title</h3>
+            <p>Animal character</p>
+          </div>
+        </article>
+
+        <article class="artwork">
+          <img src="https://placehold.co/800x1000/f1ece5/666?text=Artwork+6" alt="Artwork placeholder">
+          <div>
+            <h3>Artwork Title</h3>
+            <p>Editorial illustration</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About</h2>
+      <p>
+        Hi, I’m Kylie, an illustrator creating warm and imaginative artwork
+        for children’s books, storytelling projects, and character-based worlds.
+      </p>
+      <p>
+        Replace this paragraph with your own artist bio. You can include your
+        background, creative interests, publishing experience, favorite subjects,
+        and the kind of illustration work you are available for.
+      </p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>
+        For illustration inquiries, commissions, licensing, or children’s book projects,
+        please reach out by email.
+      </p>
+      <p>
+        <a href="mailto:your@email.com">your@email.com</a>
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 Kylie Guentherman. All rights reserved.
+  </footer>
+
+</body>
+</html>
