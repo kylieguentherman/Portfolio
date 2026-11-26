@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  background: white;
+  background: #ffffff;
   color: #222;
   font-family: "Comic Sans MS", "Trebuchet MS", Arial, sans-serif;
 }
@@ -19,11 +19,15 @@ a {
   text-decoration: none;
 }
 
+/* Main page container */
+
 .page {
   max-width: 1150px;
   margin: 0 auto;
   padding: 35px 24px 60px;
 }
+
+/* Header and navigation */
 
 header {
   text-align: center;
@@ -51,6 +55,9 @@ nav a.active {
   border-bottom: 2px solid #222;
 }
 
+/* Site title */
+
+.site-name,
 h1 {
   margin: 0;
   font-size: clamp(42px, 8vw, 86px);
@@ -67,6 +74,60 @@ h1 {
   color: #666;
 }
 
+/* Homepage hero image */
+
+.home-hero {
+  margin-bottom: 34px;
+}
+
+.home-hero a {
+  display: block;
+}
+
+.home-hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: #f5f5f5;
+}
+
+/* Homepage two-column gallery */
+
+.home-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 34px;
+  align-items: start;
+}
+
+.home-gallery-item {
+  display: block;
+}
+
+.home-gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: #f5f5f5;
+  transition: opacity 0.25s ease;
+}
+
+.home-gallery-item:hover img,
+.home-hero:hover img {
+  opacity: 0.88;
+}
+
+/* Optional captions if you ever add them back */
+
+.home-gallery-item p {
+  margin: 10px 0 0;
+  text-align: center;
+  font-size: 17px;
+  color: #555;
+}
+
+/* General hero style for other pages if needed */
+
 .hero {
   margin-bottom: 34px;
 }
@@ -74,8 +135,7 @@ h1 {
 .hero img {
   width: 100%;
   height: auto;
-  min-height: 260px;
-  object-fit: cover;
+  object-fit: contain;
   background: #f3f3f3;
 }
 
@@ -86,27 +146,33 @@ h1 {
   text-align: center;
 }
 
+/* Intro text for interior pages */
+
 .intro {
-  max-width: 760px;
+  max-width: 780px;
   margin: 38px auto 42px;
   text-align: center;
   font-size: clamp(24px, 4vw, 38px);
   line-height: 1.2;
 }
 
+/* General gallery for Children's Books and Concepts pages */
+
 .gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 34px;
+  align-items: start;
 }
 
 .gallery-item {
-  background: #f7f7f7;
+  background: transparent;
 }
 
 .gallery-item img {
   width: 100%;
   height: auto;
+  display: block;
   background: #f2f2f2;
 }
 
@@ -114,7 +180,10 @@ h1 {
   margin: 10px 0 0;
   font-size: 17px;
   text-align: center;
+  color: #555;
 }
+
+/* Text pages: About and Contact */
 
 .text-page {
   max-width: 760px;
@@ -131,37 +200,92 @@ h1 {
   text-decoration: underline;
 }
 
+.contact-box {
+  text-align: center;
+  border: 1px solid #eeeeee;
+  padding: 36px 24px;
+  margin-top: 28px;
+  background: #fafafa;
+}
+
+.contact-box a {
+  font-size: 22px;
+}
+
+/* Footer */
+
 footer {
   text-align: center;
   margin-top: 60px;
   padding-top: 30px;
-  border-top: 1px solid #eee;
+  border-top: 1px solid #eeeeee;
   color: #777;
   font-size: 14px;
 }
 
+/* Tablet layout */
+
 @media (max-width: 800px) {
-  .gallery {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+  .page {
+    padding: 32px 20px 55px;
   }
 
   nav {
     gap: 14px;
     font-size: 14px;
   }
+
+  .home-gallery,
+  .gallery {
+    gap: 24px;
+  }
+
+  .home-hero {
+    margin-bottom: 24px;
+  }
 }
+
+/* Mobile layout */
+
+@media (max-width: 650px) {
+  .home-gallery,
+  .gallery {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .site-name,
+  h1 {
+    font-size: 44px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .intro {
+    font-size: 24px;
+    margin: 30px auto 34px;
+  }
+}
+
+/* Small mobile spacing */
 
 @media (max-width: 520px) {
   .page {
     padding: 28px 16px 50px;
   }
 
-  .gallery {
-    grid-template-columns: 1fr;
+  nav {
+    gap: 12px;
+    font-size: 13px;
   }
 
-  h1 {
-    font-size: 44px;
+  header {
+    padding-bottom: 28px;
+  }
+
+  footer {
+    margin-top: 45px;
   }
 }
