@@ -63,7 +63,7 @@ nav a.active {
 
 .site-logo,
 .small-site-logo {
-  width: min(260px, 70vw);
+  width: min(360px, 80vw);
   height: auto;
   display: block;
   margin: 0 auto;
@@ -339,7 +339,7 @@ footer {
   }
 
   .home-small-gallery {
-    width: min(360px, 100%);
+    width: min(700px, 100%);
     grid-template-columns: 1fr;
     gap: 28px;
     margin-top: 38px;
